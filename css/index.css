@@ -1,5 +1,5 @@
 body {
-    background-color: blue;
+    background-color: beige;
     color: yellowgreen;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: 1px solid black;
@@ -10,6 +10,7 @@ body {
 
 h1 {
    color: rgb(170, 0, 255);
+   font-style:italic
 }
 
 h2 {
@@ -17,7 +18,11 @@ color : orange;
 }
 
 h3 {
-color: rgb(53, 36, 44);
+color: blue
+;}
+h4 {
+    color: red;
+    <
 }
 
   
