@@ -1,0 +1,26 @@
+body {
+    background-color: blue;
+    color: yellowgreen;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    padding-left: 90px;
+    font-size: large;
+    font-weight: 300;
+}
+
+h1 {
+   color: rgb(170, 0, 255);
+}
+
+h2 {
+color : orange;
+}
+
+h3 {
+color: rgb(53, 36, 44);
+}
+
+  
+  
+  
+  
