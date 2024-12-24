@@ -1,8 +1,4 @@
-ul {
-    list-style-type: none;
-    margin: 50px;
-    padding: 20px;
-  }
+
   
   li {
     display: inline;
@@ -23,8 +19,32 @@ h1 {
 }
 
 h2 {
-color : orange;
+  color : orange;
+
 }
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.experience-item {
+  display: flex;
+  flex-direction: column;
+}
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
+
+
+
+
+
+
 
   
   
