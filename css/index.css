@@ -1,0 +1,52 @@
+
+  
+  li {
+    display: inline;
+  }
+body {
+    background-color: beige;
+    color: yellowgreen;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    padding-left: 90px;
+    font-size: large;
+    font-weight: 300;
+}
+
+h1 {
+   color: rgb(170, 0, 255);
+   font-style:italic
+}
+
+h2 {
+  color : orange;
+
+}
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.experience-item {
+  display: flex;
+  flex-direction: column;
+}
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
