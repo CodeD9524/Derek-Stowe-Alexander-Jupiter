@@ -5,11 +5,12 @@ document.body.appendChild(footer);
 const copyright = document.createElement("p");
 copyright.innerHTML = 'Derek ©' + thisYear;
 footer.appendChild(copyright);
-const skills =["HTML", "CSS", "Word", "PowerPoint", "Spreadsheet"];
-const skillsSection = document.getElementById("skillsSection");
-const skillsList = skillsSection.querySelector("ul");
+const skills = ["JavaScript", "HTML", "CSS", "Word", " Photoshop"]; 
+const skillsSection = document.getElementById("skills"); 
+const skillsList = skillsSection.querySelector("ul"); 
 for (let i = 0; i < skills.length; i++) {
-const skill = document.createElement("li");
-skill.innerText = skills[i];
-skillsList.appendChild(skill);
+    const skillItem = document.createElement("li");
+    skillItem.innerText = skills[i]; 
+    skillsList.appendChild(skillItem);
+
 }
