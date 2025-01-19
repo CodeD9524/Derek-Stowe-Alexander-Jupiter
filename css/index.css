@@ -142,3 +142,14 @@ h2 {
       text-align: center;
   }
 }
+input[type="text"], textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* Default Styles */
+input[type="text"], textarea, input[type="submit"], button {
+  width: 100%; 
+  box-sizing: border-box;
+}
