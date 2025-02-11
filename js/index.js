@@ -42,7 +42,7 @@ messageList.appendChild(newMessage);
 const url = `https://api.github.com/users/amir95/repos`;
 const projectSection = document.getElementById("projects");
 const projectList = projectSection.querySelector("ul");
-  fetch(url) 
+fetch(url) 
   .then(response => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
@@ -54,4 +54,5 @@ const projectList = projectSection.querySelector("ul");
         const project = document.createElement("li");
         project.innerText = repo.name;
         projectList.appendChild(project);
-    });
+    })
+  });
