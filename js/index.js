@@ -13,20 +13,7 @@ for (let i = 0; i < skills.length; i++) {
     skillItem.innerText = skills[i]; 
     skillsList.appendChild(skillItem);
 }
-document.addEventListener("DOMContentLoaded", function() {
-  var link = document.createElement("a");
-  link.href = "https://github.com/";
-  link.target = "_blank";
-  link.innerText = "Visit My GitHub";
-  document.body.appendChild(link);
-});
-document.addEventListener("DOMContentLoaded", function() {
-  var link = document.createElement("a");
-  link.href = "https://www.linkedin.com/feed/";
-  link.target = "_blank";
-  link.innerText = "Visit My LinkedIn";
-  document.body.appendChild(link);
-});
+
 const messageForm = document.querySelector('form[name="leave_message"]'); 
 messageForm.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -41,7 +28,6 @@ const messageSection = document.getElementById('messages');
 const messageList = messageSection.querySelector('ul');
 const newMessage = document.createElement('li');
 newMessage.innerHTML = `
-    <a href="mailto:${email}">${name}</a>: 
     <span>${messageContent}</span>
 `;
 const removeButton = document.createElement('button');
@@ -56,18 +42,16 @@ messageList.appendChild(newMessage);
 document.querySelector('form[name="contact_form"]').addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const userName = event.target.userName.value; // Retrieve user's name from the form
-  const userEmail = 'amir.stowe95@gmail.com'; // Set a static email address
-  const userMessage = event.target.userMessage.value; // Retrieve user's message from the form
-
-  // Create the mailto link using the user inputs and the static email address
+  const userName = event.target.userName.value; 
+  const userEmail = 'amir.stowe95@gmail.com';
+  const userMessage = event.target.userMessage.value; 
   const mailtoLink = `mailto:${userEmail}?subject=Message%20from%20${userName}&body=${encodeURIComponent(userMessage)}`;
 
-  const emailButton = document.createElement('a'); // Create a new anchor element
+  const emailButton = document.createElement('a')
 
-  emailButton.href = mailtoLink; // Set the href to the constructed mailto link
-  emailButton.innerText = 'Send Email'; // Set the link text
-  document.body.appendChild(emailButton); // Append the link element to the body
+  emailButton.href = mailtoLink;
+  emailButton.innerText = 'Send Email';
+  document.body.appendChild(emailButton); 
 });
 const url = `https://api.github.com/users/amir95/repos`;
 const projectSection = document.getElementById("projects");
